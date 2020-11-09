@@ -4,7 +4,7 @@ Simple Static Site Generator made with Sapper
 
 Demo: [radya.netlify.app](https://radya.netlify.app)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/radya/supper-blog)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/radyakaze/supper-blog)
 
 
 ## Install
