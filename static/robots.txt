@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://radya.netlify.app/sitemap.xml

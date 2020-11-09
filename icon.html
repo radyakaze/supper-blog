@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Icon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: auto;
+        width: 512px;
+        height: 512px;
+      }
+      .bg {
+        display: grid;
+        place-items: center;
+        background: #006d77;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: 'Nunito', sans-serif;
+      }
+      .bg:after {
+        background: rgba(255, 255, 255, 0.1);
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        right: 0;
+      }
+      .card {
+        margin-left: auto;
+        margin-right: auto;
+        background: #e7e7df;
+        width: 20rem;
+        height: 20rem;
+        display: grid;
+        place-items: center;
+        border-radius: 5px;
+        transform: rotate(-3deg);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05),0 0 1px rgba(0,0,0,0.1);
+      }
+      .card:after {
+        background: #006d77;
+        content: '';
+        padding: 1rem;
+        position: absolute;
+        border-radius: 50%;
+        top: 1rem;
+        right: 1rem;
+      }
+      .card:before {
+        background: #4a4a4a;
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2rem;
+        left: -1px;
+        border-radius: 0 10px 10px 0;
+      }
+      .card-content {
+        font-size: 18.5rem;
+        color: #006d77;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="card">
+        <div class="card-content">
+          R
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

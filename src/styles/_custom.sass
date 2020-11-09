@@ -1,0 +1,191 @@
+@import "../../node_modules/bulma/sass/utilities/functions"
+@import "../../node_modules/bulma/sass/utilities/initial-variables"
+@import "../../node_modules/bulma/sass/utilities/derived-variables"
+@import '../../node_modules/bulma/sass/utilities/mixins'
+@import '_dark.sass'
+
+#rad-container
+  display: flex
+  min-height: 100vh
+  flex-direction: column
+
+  #wrapper
+    flex: 1
+
+@for $i from 1 through 3
+    .has-order-#{$i}
+        order: $i
+
+.fa-svelte
+    vertical-align: middle
+    width: 1em
+    height: 1em
+    overflow: visible
+    display: inline-block
+
+.article-meta .fa-svelte
+    vertical-align: baseline
+    width: 0.55rem !important
+    height: 0.55rem !important
+
+.card
+    border-radius: $card-border-radius
+    &+.card, +.column-right-shadow
+        margin-top: 1.5rem
+
+.card .card-image
+    overflow: hidden
+    border-top-left-radius: $card-border-radius
+    border-top-right-radius: $card-border-radius
+
+.navbar-main
+    box-shadow: 0 4px 10px rgba(0,0,0,.05)
+
+.has-link-grey
+    color: $grey !important
+
+.article
+    .content
+        font-size: 1.1rem
+    .summary
+        p:first-child::after
+            content: '…'
+
+img.is-rounded
+    border-radius: $radius-rounded
+
+.is-overflow-x-auto
+    overflow-x: auto !important
+
+.article .article-meta, .card .media
+    margin-bottom: 0.2rem !important
+
+.backtotop
+  width: 3rem !important
+  height: 3rem !important
+  position: fixed !important
+  right: 5rem
+  bottom: 5rem
+  transition: all .25s ease-out
+  transform: scale(0)
+  @media screen and (max-width: 775px)
+    right:  2rem
+    bottom: 2rem
+  &.is-visible
+    transform: scale(1)
+
+@include desktop
+  .bio-widget
+    position: sticky !important
+    top: 6rem
+
+@include until($desktop)
+  .navbar.is-active .navbar-menu
+      width: 100%
+  .navbar-burger
+    background: none !important
+  .navbar-logo
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+  .navbar-menu
+      display: flex !important
+      flex-direction: column
+      max-height: 100% !important
+      height: 100%
+      overflow: hidden !important
+      width: 0
+      position: fixed
+      z-index: -1
+      right: 0
+      top: 0
+      background-color: rgba(255, 255, 255, 0.9) !important
+      overflow-x: hidden
+      transition: all .5s
+      .navbar-start
+        flex: 1
+      .navbar-end
+        text-align: center
+        margin-bottom: 2.5rem
+      .navbar-content
+          position: relative
+          top: 25%
+          width: 100%
+          text-align: center
+          margin-top: 30px
+
+          .navbar-item
+              font-size: 2rem
+              font-weight: 300
+              &.is-active
+                  background: none
+  .profile-picture
+    max-width: 80px
+
+
+.timeline
+  display: flex
+  flex-direction: column
+
+  .timeline-header
+      width: 4em
+      min-width: 4em
+      max-width: 8em
+      word-wrap: normal
+      text-align: center
+      display: flex
+      justify-content: center
+      span
+          background: $green
+          color: #fff
+          border-radius: 5px
+          white-space: nowrap
+
+  .timeline-item
+      display: flex
+      display: -ms-flexbox
+      display: -webkit-flex
+      position: relative
+      margin-left: 2em
+      padding-bottom: 2em
+      &:before
+          content: ""
+          background-color: $beige-light
+          display: block
+          width: 2px
+          height: 100%
+          position: absolute
+          left: -.5px
+          top: 0
+
+      .timeline-marker
+          position: absolute
+          display: flex
+          align-items: center
+          justify-content: center
+          height: 32px
+          width: 33px
+          background: #c9d1d5
+          transform: translateX(-42%)
+          border-radius: 5px
+          padding: .5rem
+          top: 1.2rem
+          font-size: 0.8rem
+          padding-top: 15px
+          &::before
+            content: ''
+            background: #c15959
+            position: absolute
+            top: 0
+            width: 100%
+            height: 9px
+            border-radius: 5px 5px 0 0
+            border-bottom: 2px solid #883232
+      .timeline-content
+          padding: 1em 0 0 2em
+          color: $beige-light
+
+.content-img img
+  display: block
+  margin-right: auto
+  margin-left: auto

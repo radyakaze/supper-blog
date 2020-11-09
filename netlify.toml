@@ -1,0 +1,37 @@
+[build]
+  publish = "__sapper__/export"
+  command = "npm run export"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Feature-Policy = "camera 'none'; geolocation 'none'; microphone 'none'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "max-age=604800, public, stale-while-revalidate=5"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "max-age=604800, public, stale-while-revalidate=5"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "max-age=604800, public, stale-while-revalidate=5"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "max-age=604800, public, stale-while-revalidate=5"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "max-age=604800, public, stale-while-revalidate=5"

@@ -1,0 +1,57 @@
+/** Di karenakan bulma tidak memakai variable css, untuk dark modenya sedikit berdarah darah /**
+$dark-primary: #1e1e1e
+$dark-body: #121212
+$dark-text: #fff
+
+html
+  transition: background 1s ease-out
+
+html.dark-mode
+  background: $dark-body !important
+  body
+    color: $dark-text
+  a
+    color: #70efde
+  .navbar
+    background: $dark-primary
+    @include until($desktop)
+      .navbar-menu
+        background-color: rgba($dark-primary, 0.9) !important
+    .navbar-item
+      color: $dark-text !important
+      @include desktop
+        &:hover
+          background: rgba($dark-text, .1)
+  .footer
+    background: $dark-primary
+  .card
+    background: $dark-primary
+    color: $dark-text
+    .card-content
+      background: none
+    .card-footer
+      background: none
+      border-color: $dark-body
+  .buton.is-white
+    background: $dark-primary
+  .button.is-light
+    color: $dark-text
+    background: #353535
+    &:hover
+      background: $dark-body
+  .button.is-text
+    color: $dark-text
+    &:hover
+      color: #4a4a4a
+  .content
+    h1, h2, h3, h4, h5, h6
+      color: $dark-text
+    blockquote, pre, code
+      color: #d5d8d6
+      background: #272b31
+  a.has-link-grey
+    color: $dark-text !important
+  .timeline-marker
+    color: $dark-body
+  strong
+    color: $dark-text

@@ -1,0 +1,38 @@
+// Set your brand colors
+$grey: #7a7a7a;
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #f7f7f7;
+$text: #4a4a4a;
+$darker: #424242;
+$dark: #303030;
+$dark-fade: #eee;
+$green: #006d77;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $green;
+$link: $green;
+$widescreen-enabled: true;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+$card-shadow: 0 4px 10px rgba(0,0,0,.05), 0 0 1px rgba(0,0,0,.1);
+$card-border-radius: 4px;
+
+$radius-rounded: 290486px;
+$footer-background-color: #fff;
+$footer-padding: 1.5rem;
+
+$input-icon-color: $grey-light !default;
+$input-icon-active-color: $grey !default;
+$input-height: 1rem !default;

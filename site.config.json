@@ -1,0 +1,52 @@
+{
+    "title": "Radya",
+    "description": "Super simple blog made with Sapper",
+    "url": "https://radya.netlify.app",
+    "comment": {
+        "enable": true,
+        "autoload": true,
+        "disqus_shortname": "radya-1"
+    },
+    "navbar": {
+        "menu": [
+            {
+                "title": "Home",
+                "url": "/",
+                "rel": "prefetch"
+            },
+            {
+                "title": "Archive",
+                "url": "/archive",
+                "rel": "prefetch"
+            },
+            {
+                "title": "About Me",
+                "url": "/about",
+                "rel": "prefetch"
+            }
+        ]
+    },
+    "author": {
+        "name": "Radya",
+        "email": "radya@gmx.com",
+        "bio": "Penikmat Telur Gulung",
+        "photo": "/images/me.jpg",
+        "socials": [
+            {
+                "name": "instagram",
+                "account_name": "radyarad"
+            },
+            {
+                "name": "github",
+                "account_name": "radyakaze"
+            },
+            {
+                "name": "facebook",
+                "account_name": "radyakaze"
+            }
+        ]
+    },
+    "pagination": {
+        "limit": 4
+    }
+}
